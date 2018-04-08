@@ -46,10 +46,12 @@ class ProjectConfig:
 
     def validate(self):
         result = True
-        if not os.path.isdir(self.From):
-            result = False
-            print self.name, "From-path not found:", self.From
-        if not os.path.isdir(self.To):
-            result = False
-            print self.name, "To-path not found:", self.To
         return result
+        # os.path.isdir works only for local files and is therefore useless for this purpose
+        # if not os.path.isdir(self.From):
+        #     result = False
+        #     print self.name, "From-path not found:", self.From
+        # if not os.path.isdir(self.To):
+        #     result = False
+        #     print self.name, "To-path not found:", self.To
+        # return result
