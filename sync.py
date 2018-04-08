@@ -41,7 +41,11 @@ def main():
         print "Number of projects to sync", len(projects_to_sync)
 
         for p in projects_to_sync:
-            print p.name, "-", p.From, "-", p.To, "-", p.Command
+            print p.name
+            print "  From:    " + p.From
+            print "  To:      " + p.To
+            print "  Command: " + p.Command
+            print ""
 
         print "Ctrl-C to exit"
 
