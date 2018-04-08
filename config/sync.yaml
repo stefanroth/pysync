@@ -1,8 +1,0 @@
-Projects:
-  - test:
-    - From: /Users/stefanroth/projects/rost/pysync/testproject/From
-    - To: /Users/stefanroth/projects/rost/pysync/testproject/To/
-    - Command: rsync -a %(From) %(To)
-  - test2:
-    - From: psync/test2/from
-    - To: psync/test2/to
