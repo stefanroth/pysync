@@ -15,7 +15,8 @@ def exit_script(calling_folder, message="Exiting.", exit_state=0):
 
 def main():
     calling_folder = os.getcwd()
-    os.chdir(os.path.dirname(__file__))
+    script_path = os.path.dirname(os.path.realpath(os.path.abspath(__file__)))
+    os.chdir(script_path)
     print "Project Synchronisation Script"
     with open("./config/sync.yaml", 'r') as stream:
         try:
