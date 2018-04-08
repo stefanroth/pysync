@@ -9,6 +9,7 @@ from projectconfig import ProjectList
 
 
 def exit_script(calling_folder, message="Exiting.", exit_state=0):
+    os.chdir(calling_folder)
     print message
     sys.exit(exit_state)
 
